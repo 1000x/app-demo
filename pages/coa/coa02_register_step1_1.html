@@ -1,0 +1,28 @@
+<!-- page 容器 -->
+<ion-view view-title="coa02_register_step1" ng-controller="coa02RegisterStep1Ctrl">
+	<div class="bar bar-header bar-light">
+		<a class="button icon-left ion-chevron-left button-clear button-dark">Back</a>
+		<h1 class="title">アカウント作成</h1>
+	</div>
+	<ion-content class="has-header padding">
+		<div class="weui_msg">
+			<div>
+				<i class="ui-icons-mid color-orange">&#xe721;</i>
+			</div>
+			<div>
+				<p>名刺に記載しているのメールアドレスを入力してください。</p>
+			</div>
+			<div class="list">
+				<label class="item item-input">
+					<input type="email" name="coa02_01001txt" id="coa02_01001txt" placeholder="メールアドレス を入力してください。" required>
+				</label>
+			</div>
+
+			<div>
+				<button class="button button-block button-calm mb-20" ng-click="register_step1()">次に進む</button>
+				<a class="button button-clear button-block button-positive fsize-14" href="#/coa01">サインイン</a>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
+

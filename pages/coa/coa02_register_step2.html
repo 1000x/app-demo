@@ -1,0 +1,26 @@
+<!-- page 容器 -->
+<ion-view view-title="アカウント作成" ng-controller="coa02RegisterStep2Ctrl">
+	<ion-header-bar class="bar-light">
+		<a class="icon ion-chevron-left fsize-22" href="#/coa02_register_step1"></a>
+		<h1 class="title">アカウント作成</h1>
+	</ion-header-bar>
+	<ion-content class="has-header padding">
+		<div class="weui_msg">
+			<div class="weui_icon_area">
+				<i class="weui_icon_msg ui-icons-mid color-orange">&#xe70f;</i>
+			</div>
+			<div class="weui_text_area">
+				<p class="weui_msg_desc">名刺をアップロードしてください。</p>
+			</div>
+			<div class="list">
+				<label class="item item-input">
+					<input id="coa02_10001fle" type="file" name="userfile">
+				</label>
+			</div>
+			<div>
+				<button class="button button-block button-calm mb-20" ng-click="register_step2()" ng-disabled="!user.email">次に進む</button>
+				<a class="button button-clear button-block button-positive fsize-14" href="#/coa01">サインイン</a>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
